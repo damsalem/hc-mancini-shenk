@@ -1,6 +1,6 @@
 <?php /* Template Name: Home */ get_header(); ?>
 
-<?php get_template_part('template-parts/section_slider'); ?> <!-- Slider -->
+<?php //get_template_part('template-parts/section_slider'); ?> <!-- Slider -->
 
 <?php get_template_part('template-parts/section_welcome_blurb'); ?> <!-- Welcome Blurb -->
 

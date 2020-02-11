@@ -47,7 +47,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="container">
                         <div class="row">
                             <aside class="col-4 col-md-2"><!-- Logo -->
-                            <a class="header-logo" href="/" title="New York City Hospitality Group Home"><img src="https://nychg.org/wp-content/uploads/sites/114/2019/10/nychg-logo-200.png" alt="NYCHG Logo"></a>
+                            <a class="header-logo" href="/" title="New York City Hospitality Group Home"><img src="http://a.lex45.com/mancinishenk/wp-content/themes/mancinishenk.com/img/ms-final-logo.png" alt="NYCHG Logo"></a>
                             </aside><!-- / -->
                             <aside class="col-8 col-md-10" style="position: unset;">
                                 <div class="mobile-toggle">
