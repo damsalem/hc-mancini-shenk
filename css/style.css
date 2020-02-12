@@ -584,6 +584,17 @@ ul.contact-info li p {
 }
 /******* Hero ********/
 
+.hero-home {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.hero-home .text-ctn h1 {
+  color: #fff;
+  font-weight: bold;
+  z-index: 5;
+}
+
 .hero-text-holder {
   text-align: center;
   color: #fff;
@@ -621,6 +632,51 @@ h1.entry-title {
   color: #ccc;
 }
 
+/****** Home: About Us *********/
+.about-home .col-left .purple-bg {
+  position: relative;
+  height: 60%;
+  width: 80%;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--primary-maroon);
+}
+.about-home .col-left .about-us-img {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.about-home .col-right h2,
+.about-home .col-right p,
+.about-home .col-right .button {
+  color: var(--primary-maroon);
+}
+.about-home .col-right h2 {
+  font-size: 2em;
+}
+.about-home .col-right h2:after {
+  content: "";
+  display: block;
+  width: 130px;
+  padding-top: 5px;
+  border-bottom: 1px solid var(--primary-maroon);
+}
+.about-home .col-right .button {
+  display: inline-block;
+  border: 2px solid var(--primary-maroon);
+  padding: 10px 25px;
+  transition: 250ms;
+}
+.about-home .col-right .button:hover {
+  border: 2px solid var(--primary-maroon);
+  background: var(--primary-maroon);
+  color: #fff;
+}
+
 /****** Inner Post Pages *********/
 .blog-page-content {
   padding-left: 0px !important;
@@ -631,7 +687,7 @@ h1.entry-title {
   height: 500px !important;
 }
 
-/*** Memeber Page ***/
+/*** Member Page ***/
 .member-img {
   position: relative;
   top: -90px;
