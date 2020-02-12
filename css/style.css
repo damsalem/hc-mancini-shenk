@@ -651,30 +651,49 @@ h1.entry-title {
   background-size: cover;
 }
 .about-home .col-right h2,
-.about-home .col-right p,
-.about-home .col-right .button {
-  color: var(--primary-maroon);
+.litigation-areas h2 {
+  font-size: 2.5em;
 }
-.about-home .col-right h2 {
-  font-size: 2em;
-}
-.about-home .col-right h2:after {
+.about-home .col-right h2:after,
+.litigation-areas h2:after {
   content: "";
   display: block;
-  width: 130px;
   padding-top: 5px;
-  border-bottom: 1px solid var(--primary-maroon);
+  border-bottom: 2px solid var(--primary-maroon);
 }
-.about-home .col-right .button {
+.about-home .col-right h2:after {
+  width: 160px;
+}
+.litigation-areas h2:after {
+  margin: 0 auto;
+  width: 275px;
+}
+.about-home .col-right h2,
+.about-home .col-right p,
+.about-home .col-right .button,
+.litigation-areas .button {
+  color: var(--primary-maroon);
+}
+.about-home .col-right .button,
+.litigation-areas .button {
   display: inline-block;
   border: 2px solid var(--primary-maroon);
   padding: 10px 25px;
   transition: 250ms;
 }
-.about-home .col-right .button:hover {
+.about-home .col-right .button:hover,
+.litigation-areas .button:hover {
   border: 2px solid var(--primary-maroon);
   background: var(--primary-maroon);
   color: #fff;
+}
+.litigation-areas {
+  border-top: 7px solid var(--primary-green);
+}
+.litigation-areas .blurb img {
+  float: left;
+  width: 75px;
+  height: auto;
 }
 
 /****** Inner Post Pages *********/
