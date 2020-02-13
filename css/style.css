@@ -694,6 +694,7 @@ h1.entry-title {
   float: left;
   width: 75px;
   height: auto;
+  padding: 0 15px 8px 0;
 }
 
 /****** Inner Post Pages *********/
