@@ -117,7 +117,7 @@ function mancinishenk_com_scripts() {
         wp_enqueue_style('gravity-forms', get_template_directory_uri() . '/css/gravity-forms.css', '', '1.0.0', 'screen');
         
         
-        wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', '', '1.0.2', 'screen');
+        wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', '', '1.0.3', 'screen');
      
 
 		wp_deregister_script( 'jquery' );
