@@ -572,7 +572,6 @@ ul.contact-info {
 }
 ul.contact-info li {
   float: left;
-  padding: 0 20px;
   border-right: 1px solid var(--primary-purple);
 }
 ul.contact-info li:last-child {
@@ -651,11 +650,14 @@ h1.entry-title {
   background-size: cover;
 }
 .about-home .col-right h2,
-.litigation-areas h2 {
+.litigation-areas h2,
+.our-attorneys h2,
+.featured-news h2 {
   font-size: 2.5em;
 }
 .about-home .col-right h2:after,
-.litigation-areas h2:after {
+.litigation-areas h2:after,
+.our-attorneys h2:after {
   content: "";
   display: block;
   padding-top: 5px;
@@ -664,37 +666,116 @@ h1.entry-title {
 .about-home .col-right h2:after {
   width: 160px;
 }
-.litigation-areas h2:after {
-  margin: 0 auto;
-  width: 275px;
-}
 .about-home .col-right h2,
 .about-home .col-right p,
 .about-home .col-right .button,
-.litigation-areas .button {
+.litigation-areas .button,
+.our-attorneys .button {
   color: var(--primary-maroon);
 }
 .about-home .col-right .button,
-.litigation-areas .button {
+.litigation-areas .button,
+.our-attorneys .button {
   display: inline-block;
   border: 2px solid var(--primary-maroon);
   padding: 10px 25px;
   transition: 250ms;
 }
 .about-home .col-right .button:hover,
-.litigation-areas .button:hover {
+.litigation-areas .button:hover,
+.our-attorneys .button:hover {
   border: 2px solid var(--primary-maroon);
   background: var(--primary-maroon);
   color: #fff;
 }
 .litigation-areas {
   border-top: 7px solid var(--primary-green);
+  border-bottom: 7px solid var(--primary-green);
+}
+.litigation-areas h2:after {
+  margin: 0 auto;
+  width: 275px;
 }
 .litigation-areas .blurb img {
   float: left;
   width: 75px;
   height: auto;
   padding: 0 15px 8px 0;
+}
+.our-attorneys h2:after {
+  margin: 0 auto;
+  width: 250px;
+}
+.our-attorneys .an-attorney {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.our-attorneys .attorney-img {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.our-attorneys .overlay {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.our-attorneys .attorney-info {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 15px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.our-attorneys .attorney-info p.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.our-attorneys .attorney-info a p {
+  color: #fff;
+}
+.our-attorneys .attorney-info:hover {
+  opacity: 1;
+}
+.our-attorneys .attorney-info:hover ~ .overlay {
+  opacity: 0.3;
+}
+.featured-news {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.featured-news h3 {
+  font-weight: bold;
+}
+.featured-news .featured-news-content,
+.featured-news .featured-news-content h4 a {
+  color: #000;
+}
+.featured-news .recent-news-item {
+  display: flex;
+  grid-gap: 0 30px;
+  align-items: center;
+}
+.featured-news .recent-news-item .recent-news-img {
+  max-width: 225px;
+}
+.featured-news .recent-news-item .recent-news-content p,
+.featured-news .recent-news-item .recent-news-content h4 a {
+  color: #000;
 }
 
 /****** Inner Post Pages *********/
