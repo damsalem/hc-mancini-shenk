@@ -54,6 +54,7 @@ a:hover {
 
 p {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 ::selection {
@@ -210,7 +211,7 @@ span#bg {
   font-size: 16px;
   font-weight: bold;
   color: #000;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
   line-height: 18px;
   display: block;
@@ -334,7 +335,7 @@ span#bg {
 .navbar-nav {
   float: right;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-bottom: 2px solid var(--primary-purple);
 }
 
@@ -553,231 +554,6 @@ body.logged-in .navbar-fixed-top {
 .header-logo:focus {
   outline: none;
 }
-/**** WELCOME BLURB *********/
-.welcome-blurb-area {
-  /* background: #2c2d32; */
-  /* color: #fff; */
-  padding: 75px;
-  text-align: center;
-}
-.welcome-blurb-area h1 {
-  margin-bottom: 30px;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-ul.contact-info {
-  list-style: none;
-  float: right;
-}
-ul.contact-info li {
-  float: left;
-  border-right: 1px solid var(--primary-purple);
-}
-ul.contact-info li:last-child {
-  padding-right: 15px;
-  border-right: none;
-}
-ul.contact-info li p {
-  font-size: 16px;
-}
-/******* Hero ********/
-
-.hero-home {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-}
-.hero-home .text-ctn h1 {
-  color: #fff;
-  font-weight: bold;
-  z-index: 5;
-}
-
-.hero-text-holder {
-  text-align: center;
-  color: #fff;
-  left: 0px;
-  z-index: 9999;
-  position: relative;
-  float: left;
-  width: 100%;
-  margin-top: 200px;
-  padding-bottom: 100px;
-}
-.header-overlay {
-  background: rgba(44, 45, 50, 0.8);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-.hero-background-image {
-  background-size: cover !important;
-  position: relative;
-  float: left;
-  width: 100%;
-  margin-top: -104px;
-}
-
-h1.entry-title {
-  font-size: 50px;
-}
-
-#breadcrumbs a {
-  color: #fff;
-}
-
-#breadcrumbs span {
-  color: #ccc;
-}
-
-/****** Home: About Us *********/
-.about-home .col-left .purple-bg {
-  position: relative;
-  height: 60%;
-  width: 80%;
-  min-width: 300px;
-  min-height: 300px;
-  background-color: var(--primary-maroon);
-}
-.about-home .col-left .about-us-img {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.about-home .col-right h2,
-.litigation-areas h2,
-.our-attorneys h2,
-.featured-news h2 {
-  font-size: 2.5em;
-}
-.about-home .col-right h2:after,
-.litigation-areas h2:after,
-.our-attorneys h2:after {
-  content: "";
-  display: block;
-  padding-top: 5px;
-  border-bottom: 2px solid var(--primary-maroon);
-}
-.about-home .col-right h2:after {
-  width: 160px;
-}
-.about-home .col-right h2,
-.about-home .col-right p,
-.about-home .col-right .button,
-.litigation-areas .button,
-.our-attorneys .button {
-  color: var(--primary-maroon);
-}
-.about-home .col-right .button,
-.litigation-areas .button,
-.our-attorneys .button {
-  display: inline-block;
-  border: 2px solid var(--primary-maroon);
-  padding: 10px 25px;
-  transition: 250ms;
-}
-.about-home .col-right .button:hover,
-.litigation-areas .button:hover,
-.our-attorneys .button:hover {
-  border: 2px solid var(--primary-maroon);
-  background: var(--primary-maroon);
-  color: #fff;
-}
-.litigation-areas {
-  border-top: 7px solid var(--primary-green);
-  border-bottom: 7px solid var(--primary-green);
-}
-.litigation-areas h2:after {
-  margin: 0 auto;
-  width: 275px;
-}
-.litigation-areas .blurb img {
-  float: left;
-  width: 75px;
-  height: auto;
-  padding: 0 15px 8px 0;
-}
-.our-attorneys h2:after {
-  margin: 0 auto;
-  width: 250px;
-}
-.our-attorneys .an-attorney {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.our-attorneys .attorney-img {
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-}
-.our-attorneys .overlay {
-  position: absolute;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity 500ms;
-}
-.our-attorneys .attorney-info {
-  position: absolute;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding-left: 15px;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 500ms;
-}
-.our-attorneys .attorney-info p.title {
-  font-size: 22px;
-  font-weight: bold;
-}
-.our-attorneys .attorney-info a p {
-  color: #fff;
-}
-.our-attorneys .attorney-info:hover {
-  opacity: 1;
-}
-.our-attorneys .attorney-info:hover ~ .overlay {
-  opacity: 0.3;
-}
-.featured-news {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.featured-news h3 {
-  font-weight: bold;
-}
-.featured-news .featured-news-content,
-.featured-news .featured-news-content h4 a {
-  color: #000;
-}
-.featured-news .recent-news-item {
-  display: flex;
-  grid-gap: 0 30px;
-  align-items: center;
-}
-.featured-news .recent-news-item .recent-news-img {
-  max-width: 225px;
-}
-.featured-news .recent-news-item .recent-news-content p,
-.featured-news .recent-news-item .recent-news-content h4 a {
-  color: #000;
-}
-
 /****** Inner Post Pages *********/
 .blog-page-content {
   padding-left: 0px !important;
@@ -904,8 +680,7 @@ h1.entry-title {
   margin-right: 10px;
 }
 .welcome-links {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 10px 0px;
 }
 .welcome-links a:first-of-type {
   background-color: transparent;
@@ -1310,12 +1085,6 @@ h1.entry-title {
     opacity: 0;
   }
 }
-.footer-area {
-  background: #2c2d32;
-  padding: 60px 0;
-  float: left;
-  width: 100%;
-}
 
 .footer-img {
   margin-bottom: 20px;
@@ -1330,7 +1099,7 @@ h1.entry-title {
 }
 
 .footer-img {
-  width: 200px;
+  width: 100%;
   display: block;
   text-align: center;
 }
@@ -1833,6 +1602,273 @@ h1.entry-title {
     padding: 0px;
   }
 }
+
+/* START Dani's Work */
+/**** HEADER *********/
+/* Compressed Viewport Messes Up Header */
+@media only screen and (max-width: 1200px) {
+  .navbar-nav {
+    border-bottom: none;
+  }
+  .carousel-link.welcome-links {
+    display: none;
+  }
+}
+/**** FOOTER *********/
+.footer-area {
+  background: var(--secondary-light-gray);
+  padding: 60px 0 25px;
+}
+.footer-area .biz-info > p {
+  font-size: 16px;
+}
+ul#footer-menu {
+  float: none;
+  padding-bottom: 0;
+  border: none;
+
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+ul#footer-menu.navbar-nav li a {
+  padding: 0 0 15px;
+  border-right: none;
+  font-weight: normal;
+  text-transform: initial;
+}
+ul#footer-menu.navbar-nav > li.active > a,
+ul.legal-nav li a {
+  color: #000;
+}
+ul.legal-nav {
+  padding: 0;
+}
+ul.legal-nav li {
+  list-style: none;
+  padding: 15px 0px;
+}
+ul.legal-nav li a {
+  font-weight: bold;
+}
+.footer-area .copy {
+  border-top: 1px solid var(--primary-maroon);
+  padding-top: 25px;
+}
+.footer-area .copy p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/**** WELCOME BLURB *********/
+.welcome-blurb-area {
+  padding: 75px;
+  text-align: center;
+}
+.welcome-blurb-area h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+ul.contact-info {
+  list-style: none;
+  float: right;
+}
+ul.contact-info li {
+  float: left;
+  border-right: 1px solid var(--primary-purple);
+}
+ul.contact-info li:last-child {
+  border-right: none;
+}
+ul.contact-info li p {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: initial;
+}
+/******* Hero ********/
+
+.hero-home {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.hero-home .text-ctn h1 {
+  color: #fff;
+  font-weight: bold;
+  z-index: 5;
+}
+.hero-background-image {
+  background-size: cover !important;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: -104px;
+}
+.hero-home .overlay {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  transition: opacity 500ms;
+}
+/****** Home: About Us *********/
+.about-home .col-left .purple-bg {
+  position: relative;
+  height: 60%;
+  width: 80%;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--primary-maroon);
+}
+.about-home .col-left .about-us-img {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.about-home .col-right h2,
+.litigation-areas h2,
+.our-attorneys h2,
+.featured-news h2 {
+  font-size: 2.5em;
+}
+.about-home .col-right h2:after,
+.litigation-areas h2:after,
+.our-attorneys h2:after {
+  content: "";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 2px solid var(--primary-maroon);
+}
+.about-home .col-right h2:after {
+  width: 160px;
+}
+.about-home .col-right h2,
+.about-home .col-right p,
+.about-home .col-right .button,
+.litigation-areas .button,
+.our-attorneys .button {
+  color: var(--primary-maroon);
+}
+.about-home .col-right .button,
+.litigation-areas .button,
+.our-attorneys .button {
+  display: inline-block;
+  border: 2px solid var(--primary-maroon);
+  padding: 10px 25px;
+  transition: 250ms;
+}
+.about-home .col-right .button:hover,
+.litigation-areas .button:hover,
+.our-attorneys .button:hover {
+  border: 2px solid var(--primary-maroon);
+  background: var(--primary-maroon);
+  color: #fff;
+}
+.litigation-areas {
+  border-top: 7px solid var(--primary-green);
+  border-bottom: 7px solid var(--primary-green);
+}
+.litigation-areas h2:after {
+  margin: 0 auto;
+  width: 275px;
+}
+.litigation-areas .blurb img {
+  float: left;
+  width: 75px;
+  height: auto;
+  padding: 0 15px 8px 0;
+}
+.our-attorneys h2:after {
+  margin: 0 auto;
+  width: 250px;
+}
+.our-attorneys .an-attorney {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.our-attorneys .attorney-img {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.our-attorneys .overlay {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.our-attorneys .attorney-info {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 15px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.our-attorneys .attorney-info p.title {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: initial;
+}
+.our-attorneys .attorney-info a {
+  display: inline-block;
+  color: #fff;
+  font-family: initial;
+  margin-bottom: 25px;
+}
+.our-attorneys .attorney-info:hover {
+  opacity: 1;
+}
+.our-attorneys .attorney-info:hover ~ .overlay {
+  opacity: 0.3;
+}
+.featured-news {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.featured-news h3 {
+  font-weight: bold;
+}
+.featured-news .featured-news-content,
+.featured-news .featured-news-content h4 a {
+  color: #000;
+}
+.featured-news .fnc-excerpt {
+  line-height: 26px;
+}
+.featured-news .recent-news-item {
+  display: flex;
+  grid-gap: 0 30px;
+  align-items: center;
+}
+.featured-news .recent-news-item .recent-news-img {
+  max-width: 225px;
+}
+.featured-news .recent-news-item .recent-news-content p,
+.featured-news .recent-news-item .recent-news-content h4 a {
+  color: #000;
+}
+/* END Dani's Work */
 
 /*
 ====================================

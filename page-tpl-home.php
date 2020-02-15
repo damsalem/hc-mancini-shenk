@@ -10,7 +10,7 @@
 
 <?php get_template_part('template-parts/section_our_attorneys_home'); ?>  <!-- Our Attorneys Home Section -->
 
-<?php get_template_part('template-parts/section_recent_events'); ?> <!-- Recent Events -->
+<?php get_template_part('template-parts/section_featured_news'); ?> <!-- Featured News -->
      
 <?php //get_template_part('template-parts/section_blog_news'); ?> <!-- Blog News -->
 

@@ -18,6 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet"> 
 
 <?php wp_head(); ?>
 
@@ -39,7 +40,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--// Main Wrapper \\-->
 <div id="page">
 <span id="bg"></span><!--Don't remove -->
-    <header id="main-header" class="=header-one">
+    <header id="main-header" class="header-one">
         <div id="navigation">
             <div class="navbar yamm">
                 <!--// MainHeader \\-->
@@ -47,19 +48,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="container">
                         <div class="row">
                             <aside class="col-4 col-md-2"><!-- Logo -->
-                            <a class="header-logo" href="/" title="Mancini Shenk Home"><img src="http://a.lex45.com/mancinishenk/wp-content/themes/mancinishenk.com/img/ms-final-logo.png" alt="Mancini Shenk Logo"></a>
+                            <a class="header-logo" href="/" title="Mancini Shenk Home"><img src="http://a.lex45.com/mancinishenk/wp-content/themes/mancinishenk.com/img/ms-final-logo-transparent.png" alt="Mancini Shenk Logo"></a>
                             </aside><!-- / -->
                             <aside class="col-8 col-md-10" style="position: unset;">
                                 <div class="mobile-toggle">
                                     <?php wp_nav_menu( array(
+                                    'menu'              => 'Main Menu',
                                     'theme_location'    => 'menu-1',
-                                    'depth'      => 3,
-                                    'container'  => false,
-                                    'menu_class' => 'nav navbar-nav',
-                                    'menu_id' => 'main-menu',
-                                    'link_class'   => '',
-                                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                    'walker' => new wp_bootstrap_navwalker())
+                                    'depth'             => 3,
+                                    'container'         => false,
+                                    'menu_class'        => 'nav navbar-nav',
+                                    'menu_id'           => 'main-menu',
+                                    'link_class'        => '',
+                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                    'walker'            => new wp_bootstrap_navwalker())
                                 ); ?>
                       
                       </div>

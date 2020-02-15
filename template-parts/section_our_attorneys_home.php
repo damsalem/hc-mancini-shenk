@@ -31,7 +31,7 @@
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                     ?>
-                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><p class="link"><?php echo esc_html( $link_title ); ?></p></a>
+                                    <span class="link"><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></span>
                                 <?php endif; ?>
                             </div>
                             <div class="overlay"></div>

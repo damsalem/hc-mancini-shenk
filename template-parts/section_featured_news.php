@@ -1,4 +1,4 @@
-  <!-- events-area start -->
+  <!-- featured-news start -->
     <div 
     class="featured-news text-center py-5"
     style="background-image: url(<?php the_field('featured_news_background_image') ?>);"
@@ -28,8 +28,8 @@
                 <div class="col-md-8">
                     <div class="featured-news-content">
                     <h4 class="text-left"><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                    <p class="text-left">By <?php the_author(); ?>, <?php echo get_the_date(); ?></p>
-                    <p class="text-left"><?php echo get_the_excerpt(); ?></p>
+                    <h4 class="text-left">By <?php the_author(); ?>, <?php echo get_the_date(); ?></h4>
+                    <p class="fnc-excerpt text-left"><?php echo get_the_excerpt(); ?></p>
                     </div>
                 </div>
                           
@@ -82,4 +82,4 @@
                     </div>
                 </div>
          
-    <!-- events-area end -->
+    <!-- featured-news end -->
