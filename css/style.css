@@ -319,7 +319,7 @@ span#bg {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-bottom: none;
-  color: #333333;
+  color: #808080;
 }
 
 #main-menu > li > .dropdown-menu {
@@ -1637,9 +1637,11 @@ ul#footer-menu.navbar-nav li a {
   font-weight: normal;
   text-transform: initial;
 }
-ul#footer-menu.navbar-nav > li.active > a,
 ul.legal-nav li a {
   color: #000;
+}
+ul#footer-menu.navbar-nav > li.active > a {
+  color: #808080;
 }
 ul.legal-nav {
   padding: 0;
